@@ -7,7 +7,7 @@ class Jreen < Formula
 
   depends_on 'cmake' => :build
   depends_on 'qt5'
-  depends_on 'qca'
+  depends_on 'tomahawk-player/tomahawkqt5/qca'
   depends_on 'tomahawk-player/tomahawkqt5/qca-ossl'
 
   def install

@@ -18,9 +18,9 @@ class Qca < Formula
 #  end
 
   def install
-    qtpluginsdir = `qmake -query QT_INSTALL_PLUGINS`.chop
-    system "cmake -DQT_PLUGINS_DIR=#{qtpluginsdir}", ".", *std_cmake_args
-    system "make"
+#    qtpluginsdir = `qmake -query QT_INSTALL_PLUGINS`.chop
+#    system "cmake -DQT_PLUGINS_DIR=#{qtpluginsdir}", ".", *std_cmake_args
+    system "cmake -DQT_PLUGINS_DIR=/usr/local/Cellar/qt5/5.0.2/plugins . -DCMAKE_INSTALL_PREFIX=/usr/local/Cellar/qca/HEAD -DCMAKE_BUILD_TYPE=None -DCMAKE_FIND_FRAMEWORK=LAST -Wno-dev"
     system "make install"
   end
 end

@@ -18,7 +18,7 @@ class Qca < Formula
 #  end
 
   def install
-    system "cmake", ".", *std_cmake_args
+    system "cmake -DQT_PLUGINS_DIR=`qmake -query QT_INSTALL_PLUGINS`", ".", *std_cmake_args
     system "make install"
   end
 end

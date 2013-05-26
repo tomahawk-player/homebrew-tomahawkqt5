@@ -1,6 +1,6 @@
 require 'formula'
 
-class Lastfmlib < Formula
+class Liblastfm < Formula
 #  head 'git://github.com/lastfm/liblastfm.git'
   head 'git://github.com/muesli/liblastfm.git'
 #  url 'http://cdn.last.fm/client/liblastfm-1.0.2.tar.gz'

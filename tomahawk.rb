@@ -17,19 +17,19 @@ class Tomahawk < Formula
   depends_on 'taglib'
   depends_on 'boost'
   depends_on 'libechonest'
-  depends_on 'tomahawk-player/tomahawk/kde-phonon'
-  depends_on 'tomahawk-player/tomahawk/quazip'
-  depends_on 'tomahawk-player/tomahawk/attica'
-  depends_on 'tomahawk-player/tomahawk/clucene'
-  depends_on 'tomahawk-player/tomahawk/phonon-vlc'
-  depends_on 'tomahawk-player/tomahawk/lastfmlib'
+  depends_on 'tomahawk-player/tomahawkqt5/kde-phonon'
+  depends_on 'tomahawk-player/tomahawkqt5/quazip'
+  depends_on 'tomahawk-player/tomahawkqt5/attica'
+  depends_on 'tomahawk-player/tomahawkqt5/clucene'
+  depends_on 'tomahawk-player/tomahawkqt5/phonon-vlc'
+  depends_on 'tomahawk-player/tomahawkqt5/lastfmlib'
   depends_on 'owncloud/owncloud/qtkeychain'
 
   # optional:
-  depends_on 'tomahawk-player/tomahawk/qtweetlib'
-  depends_on 'tomahawk-player/tomahawk/jreen'
+  depends_on 'tomahawk-player/tomahawkqt5/qtweetlib'
+  depends_on 'tomahawk-player/tomahawkqt5/jreen'
   depends_on 'qca'
-  depends_on 'tomahawk-player/tomahawk/qca-ossl'
+  depends_on 'tomahawk-player/tomahawkqt5/qca-ossl'
 
   def install
     system "cmake . #{std_cmake_parameters}"

@@ -7,11 +7,11 @@ class Jreen < Formula
 
   depends_on 'cmake' => :build
   depends_on 'qt5'
-  depends_on 'tomahawk-player/tomahawkqt5/qca'
-  depends_on 'tomahawk-player/tomahawkqt5/qca-ossl'
+#  depends_on 'tomahawk-player/tomahawkqt5/qca'
+#  depends_on 'tomahawk-player/tomahawkqt5/qca-ossl'
 
   def install
-    system "cmake . -DQCA2_INCLUDE_DIR=/usr/local/lib/qca.framework/Headers/ #{std_cmake_parameters}"
+    system "cmake . #{std_cmake_parameters}"
     system "make install"
   end
 end

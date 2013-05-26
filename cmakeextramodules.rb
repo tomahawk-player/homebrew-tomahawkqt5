@@ -1,6 +1,6 @@
 require 'formula'
 
-class CMakeextramodules < Formula
+class Cmakeextramodules < Formula
   head 'git://anongit.kde.org/extra-cmake-modules'
 
   depends_on 'cmake'

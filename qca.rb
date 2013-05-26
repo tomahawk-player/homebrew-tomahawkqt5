@@ -6,6 +6,7 @@ class Qca < Formula
 #  url 'http://delta.affinix.com/download/qca/2.0/qca-2.0.3.tar.bz2'
   sha1 '9c868b05b81dce172c41b813de4de68554154c60'
 
+  depends_on 'cmake' => :build
   depends_on 'qt5'
 
   # Fix for clang adhering strictly to standard, see http://clang.llvm.org/compatibility.html#dep_lookup_bases
@@ -17,7 +18,7 @@ class Qca < Formula
 #  end
 
   def install
-    system "./configure", "--prefix=#{prefix}", "--disable-tests"
+    system "cmake", ".", *std_cmake_args
     system "make install"
   end
 end

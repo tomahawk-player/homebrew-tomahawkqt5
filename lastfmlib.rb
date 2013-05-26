@@ -6,7 +6,7 @@ class Lastfmlib < Formula
   md5 '6822e4048a69a7f9afed6236cc555291'
 
   depends_on 'cmake' => :build
-  depends_on 'qt'
+  depends_on 'qt5'
   
   # deps for the fingerprinting lib
   depends_on 'fftw'

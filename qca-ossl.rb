@@ -5,7 +5,7 @@ class QcaOssl <Formula
   homepage 'http://delta.affinix.com/qca/'
   md5 'bdc62c01321385c7da8d27b3902910ce'
 
-  depends_on 'qt'
+  depends_on 'qt5'
   depends_on 'qca'
 
   def patches

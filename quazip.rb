@@ -5,7 +5,7 @@ class Quazip < Formula
   homepage ''
   md5 '5e548a988d059430930b61330b5bfade'
 
-  depends_on 'qt'
+  depends_on 'qt5'
 
   def install
     system "qmake PREFIX=#{prefix}"

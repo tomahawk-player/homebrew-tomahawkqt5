@@ -7,7 +7,7 @@ class Qtweetlib < Formula
   md5 'bf1a7cf45eb63479bf5d81d807b0d518'
 
   depends_on 'cmake' => :build
-  depends_on 'qt'
+  depends_on 'qt5'
 
   def install
     system "cmake . #{std_cmake_parameters}"

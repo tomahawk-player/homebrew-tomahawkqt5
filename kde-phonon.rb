@@ -8,7 +8,7 @@ class KdePhonon < Formula
 
   depends_on 'cmake' => :build
   depends_on 'automoc4' => :build
-  depends_on 'qt'
+  depends_on 'qt5'
   depends_on 'glib' => :build
   depends_on 'xz' => :build
 

@@ -7,7 +7,7 @@ class Libechonest < Formula
 
   depends_on 'cmake' => :build
   depends_on 'qt5'
-  depends_on 'qjson'
+  depends_on 'tomahawk-player/tomahawkqt5/qjson'
 
   def install
     system "cmake", ".", *std_cmake_args

@@ -20,7 +20,7 @@ class PhononVlc <Formula
     #make sure to use the keg-only kde-phonon not the phonon installed with qt
     phonon = Formula.factory("kde-phonon")
 
-    system "cmake . #{std_cmake_parameters} -DPhonon_DIR:PATH=#{phonon.lib}/cmake/phonon"
+    system "cmake . #{std_cmake_parameters} -DPhonon_DIR:PATH=#{phonon.lib}/cmake/phonon -DPHONON_BUILD_PHONON4QT5=ON"
     system "make install"
     
     # phonon is dumb and just loads p lugins blindly from the qt plugin path. we're really sure we want to be loaded, so we delete any other

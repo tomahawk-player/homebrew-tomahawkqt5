@@ -18,7 +18,7 @@ class Qca < Formula
 #  end
 
   def install
-    qtpluginsdir = `qmake -query QT_INSTALL_PLUGINS`
+    qtpluginsdir = `qmake -query QT_INSTALL_PLUGINS`.chop
     system "cmake -DQT_PLUGINS_DIR=#{qtpluginsdir}", ".", *std_cmake_args
     system "make install"
   end

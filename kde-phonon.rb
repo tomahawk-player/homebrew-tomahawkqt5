@@ -19,28 +19,4 @@ class KdePhonon < Formula
     system "cmake #{std_cmake_parameters} -DPHONON_NO_DBUS=TRUE -DPHONON_BUILD_PHONON4QT5=ON ."
     system "make install"
   end
-
-  def patches
-    DATA
-  end
 end
-
-__END__
-diff --git a/cmake/FindPhononInternal.cmake b/cmake/FindPhononInternal.cmake
-index 7c52f09..a36af8f 100644
---- a/cmake/FindPhononInternal.cmake
-+++ b/cmake/FindPhononInternal.cmake
-@@ -407,9 +407,9 @@ if (CMAKE_COMPILER_IS_GNUCXX)
-
-       try_compile(_compile_result ${CMAKE_BINARY_DIR} ${_source_file} CMAKE_FLAGS "${_include_dirs}" COMPILE_OUTPUT_VARIABLE _compile_output_var)
-
--      if(NOT _compile_result)
--         message(FATAL_ERROR "Qt compiled without support for -fvisibility=hidden. This will break plugins and linking of some applications. Please fix your Qt installation.")
--      endif(NOT _compile_result)
-+      #if(NOT _compile_result)
-+          #message(FATAL_ERROR "Qt compiled without support for -fvisibility=hidden. This will break plugins and linking of some applications. Please fix your Qt installation.")
-+      #endif(NOT _compile_result)
-
-       if (GCC_IS_NEWER_THAN_4_2)
-         set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility-inlines-hidden")
-

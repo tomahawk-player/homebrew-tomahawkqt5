@@ -27,6 +27,7 @@ class Qt < Formula
 
   depends_on "d-bus" if build.include? 'with-qtdbus'
   depends_on "mysql" if build.include? 'with-mysql'
+  depends_on "postgresql" if build.include? 'with-postgresql'
   depends_on 'sqlite' if MacOS.version == :leopard
 
   def patches
@@ -56,6 +57,7 @@ class Qt < Formula
     args << "-system-sqlite" if MacOS.version == :leopard
 
     args << "-plugin-sql-mysql" if build.include? 'with-mysql'
+    args << "-plugin-sql-psql" if build.include? 'with-postgresql'
 
     if build.include? 'with-qtdbus'
       args << "-I#{Formula.factory('d-bus').lib}/dbus-1.0/include"

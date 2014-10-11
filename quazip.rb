@@ -8,13 +8,20 @@ class Quazip < Formula
   depends_on 'qt5'
 
   def install
-    system "qmake PREFIX=#{prefix}"
-    system "make"
-    system "make install"
-#system "install -Dm644 libquazip.a #{prefix}
-  end
+    if ENV.compiler == :clang and MacOS.version >= :mavericks
+      spec = "unsupported/macx-clang-libc++"
+    else
+      spec = "macx-g++"
+    end
 
-#  def patches
-#  'https://raw.github.com/gist/1690173/965d6bde2e447f81b3a9c21dcc10675783f781cc/gistfile1.txt'
-#  end
+    args = %W[
+      -config release -spec #{spec}
+      PREFIX=#{prefix}
+      LIBS+=-L/usr/lib LIBS+=-lz
+      INCLUDEPATH+=/usr/include
+    ]
+
+    system "qmake", "quazip.pro", *args
+    system "make", "install"
+  end
 end

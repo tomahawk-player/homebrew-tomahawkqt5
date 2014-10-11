@@ -20,7 +20,7 @@ class Tomahawk < Formula
   depends_on 'tomahawk-player/tomahawkqt5/kde-phonon'
   depends_on 'tomahawk-player/tomahawkqt5/quazip'
   depends_on 'tomahawk-player/tomahawkqt5/attica'
-  depends_on 'tomahawk-player/tomahawkqt5/clucene'
+  depends_on 'tomahawk-player/tomahawkqt5/lucenepp'
   depends_on 'tomahawk-player/tomahawkqt5/phonon-vlc'
   depends_on 'tomahawk-player/tomahawkqt5/liblastfm'
   depends_on 'tomahawk-player/tomahawkqt5/qtkeychain'

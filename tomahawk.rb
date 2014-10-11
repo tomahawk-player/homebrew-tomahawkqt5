@@ -26,7 +26,6 @@ class Tomahawk < Formula
   depends_on 'tomahawk-player/tomahawkqt5/qtkeychain'
 
   # optional:
-  depends_on 'tomahawk-player/tomahawkqt5/qtweetlib'
   depends_on 'tomahawk-player/tomahawkqt5/jreen'
   depends_on 'qca'
   depends_on 'tomahawk-player/tomahawkqt5/qca-ossl'

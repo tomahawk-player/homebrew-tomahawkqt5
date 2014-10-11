@@ -8,12 +8,6 @@ class Quazip < Formula
   depends_on 'qt5'
 
   def install
-    if ENV.compiler == :clang and MacOS.version >= :mavericks
-      spec = "unsupported/macx-clang-libc++"
-    else
-      spec = "macx-g++"
-    end
-
     args = %W[
       -config release -spec #{spec}
       PREFIX=#{prefix}

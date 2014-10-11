@@ -41,7 +41,7 @@ class Vlc < Formula
 
     if MacOS.version >= 10.9
       sdk = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk"
-    if MacOS.version >= 10.8
+    elsif MacOS.version >= 10.8
       sdk = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk"
     elsif MacOS.version >= 10.7
       sdk = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk"

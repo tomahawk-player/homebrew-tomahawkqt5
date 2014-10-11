@@ -7,7 +7,7 @@ class Qtkeychain < Formula
   head 'https://github.com/frankosterfeld/qtkeychain.git', :using => :git
 
   depends_on 'cmake' => :build
-  depends_on 'qt'
+  depends_on 'qt5'
 
   def install
     system "cmake", ".", *std_cmake_args

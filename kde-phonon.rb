@@ -3,7 +3,7 @@ require 'formula'
 class KdePhonon < Formula
   url 'ftp://ftp.kde.org/pub/kde/stable/phonon/4.8.0/src/phonon-4.8.0.tar.xz'
   homepage 'http://phonon.kde.org/'
-  md5 'bbe0c1c62ed14c31479c4c1a6cf1e173'
+#  md5 'bbe0c1c62ed14c31479c4c1a6cf1e173'
   head 'git://anongit.kde.org/phonon.git'
 
   depends_on 'cmake' => :build

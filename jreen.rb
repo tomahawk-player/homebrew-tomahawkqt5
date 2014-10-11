@@ -6,6 +6,7 @@ class Jreen < Formula
   md5 '180c4a3356b6d5865292e33de2a29820'
 
   depends_on 'cmake' => :build
+  depends_on 'gsasl'
   depends_on 'qt5'
 #  depends_on 'tomahawk-player/tomahawkqt5/qca'
 #  depends_on 'tomahawk-player/tomahawkqt5/qca-ossl'

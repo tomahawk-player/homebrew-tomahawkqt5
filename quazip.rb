@@ -9,7 +9,7 @@ class Quazip < Formula
 
   def install
     args = %W[
-      -config release -spec #{spec}
+      -config release
       PREFIX=#{prefix}
       LIBS+=-L/usr/lib LIBS+=-lz
       INCLUDEPATH+=/usr/include

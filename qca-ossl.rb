@@ -6,7 +6,7 @@ class QcaOssl <Formula
   md5 'bdc62c01321385c7da8d27b3902910ce'
 
   depends_on 'qt5'
-  depends_on 'qca'
+  depends_on 'tomahawk-player/tomahawkqt5/qca'
 
   def patches
     # qca-ossl-2.0.0-beta3 will not build against the current release of OpenSSL without being patched

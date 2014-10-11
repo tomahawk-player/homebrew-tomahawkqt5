@@ -25,8 +25,8 @@ class PhononVlc <Formula
     
     # phonon is dumb and just loads p lugins blindly from the qt plugin path. we're really sure we want to be loaded, so we delete any other
     # phonon backends first. 
-    pluginDir = "#{Formula.factory("qt").prefix}/plugins/phonon_backend"
-    print "pluginDir: #{pluginDir} #{Formula.factory('qt').prefix}"
+    pluginDir = "#{Formula.factory("qt5").prefix}/plugins/phonon_backend"
+    print "pluginDir: #{pluginDir} #{Formula.factory('qt5').prefix}"
     system "rm -f #{pluginDir}/*"
     system "cp #{prefix}/lib/kde4/plugins/phonon_backend/phonon_vlc.so #{pluginDir}"
   end

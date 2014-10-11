@@ -2,9 +2,9 @@ require 'formula'
 
 class Qca < Formula
   homepage 'http://delta.affinix.com/qca/'
-  head 'svn://anonsvn.kde.org/home/kde/trunk/kdesupport/qca'
+  head 'git://anongit.kde.org/qca.git'
 #  url 'http://delta.affinix.com/download/qca/2.0/qca-2.0.3.tar.bz2'
-  sha1 '9c868b05b81dce172c41b813de4de68554154c60'
+#  sha1 '9c868b05b81dce172c41b813de4de68554154c60'
 
   depends_on 'cmake' => :build
   depends_on 'qt5'

@@ -7,7 +7,7 @@ class Qtkeychain < Formula
   head 'https://github.com/frankosterfeld/qtkeychain.git', :using => :git
 
   depends_on 'cmake' => :build
-  # depends on Qt, but we want to accept a system Qt as well. How?
+  depends_on 'qt'
 
   def install
     system "cmake", ".", *std_cmake_args
@@ -20,25 +20,4 @@ class Qtkeychain < Formula
     # were more thorough. Run the test with `brew test qtkeychain`.
     system "false"
   end
-
-  def patches
-    DATA
-  end
 end
-
-__END__
-diff --git a/CMakeLists.txt b/CMakeLists.txt
-index aba9032..3edf781 100644
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
-@@ -93,8 +93,8 @@ set(qtkeychain_TR_FILES
- )
- 
- file(GLOB qtkeychain_TR_SOURCES *.cpp *.h *.ui)
--qt4_create_translation(qtkeychain_MESSAGES ${qtkeychain_TR_SOURCES} ${qtkeychain_TR_FILES})
--qt4_add_translation(qtkeychain_QM_FILES ${qtkeychain_TR_FILES})
-+#qt4_create_translation(qtkeychain_MESSAGES ${qtkeychain_TR_SOURCES} ${qtkeychain_TR_FILES})
-+#qt4_add_translation(qtkeychain_QM_FILES ${qtkeychain_TR_FILES})
- add_custom_target(messages DEPENDS ${qtkeychain_MESSAGES})
- add_custom_target(translations DEPENDS ${qtkeychain_QM_FILES})
- 

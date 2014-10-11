@@ -1,9 +1,9 @@
 require 'formula'
 
 class Quazip < Formula
-  url 'http://downloads.sourceforge.net/project/quazip/quazip/0.4.3/quazip-0.4.3.tar.gz'
+  url "https://downloads.sourceforge.net/project/quazip/quazip/0.7/quazip-0.7.tar.gz"
+  sha1 "861ab4efc048fdb272161848bb8829848857ec97"
   homepage ''
-  md5 '5e548a988d059430930b61330b5bfade'
 
   depends_on 'qt5'
 
@@ -14,7 +14,7 @@ class Quazip < Formula
 #system "install -Dm644 libquazip.a #{prefix}
   end
 
-  def patches
-  'https://raw.github.com/gist/1690173/965d6bde2e447f81b3a9c21dcc10675783f781cc/gistfile1.txt'
-  end
+#  def patches
+#  'https://raw.github.com/gist/1690173/965d6bde2e447f81b3a9c21dcc10675783f781cc/gistfile1.txt'
+#  end
 end

@@ -1,9 +1,9 @@
 require 'formula'
 
-class Snorenotify < Formula
-  head 'git://github.com/Snorenotify/Snorenotify.git'
-  url 'https://github.com/Snorenotify/Snorenotify/archive/v0.5.1.tar.gz'
-  sha1 'eb83e0b7bccfc1c307a8457265dc4a5607a8b877'
+class Snoregrowl < Formula
+  head 'git://github.com/Snorenotify/SnoreGrowl.git'
+  url 'https://github.com/Snorenotify/SnoreGrowl/archive/v0.4.0.tar.gz'
+  sha1 '16b84d2fb673438c8250cefd95f7e4c145e4cf22'
 
   depends_on 'cmake' => :build
   depends_on 'qt'

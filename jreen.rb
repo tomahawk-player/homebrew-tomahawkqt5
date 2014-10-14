@@ -8,8 +8,6 @@ class Jreen < Formula
   depends_on 'cmake' => :build
   depends_on 'gsasl'
   depends_on 'qt5'
-#  depends_on 'tomahawk-player/tomahawkqt5/qca'
-#  depends_on 'tomahawk-player/tomahawkqt5/qca-ossl'
 
   def install
     system "cmake . #{std_cmake_parameters}"

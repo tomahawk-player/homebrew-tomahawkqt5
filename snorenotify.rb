@@ -6,7 +6,9 @@ class Snorenotify < Formula
   sha1 'eb83e0b7bccfc1c307a8457265dc4a5607a8b877'
 
   depends_on 'cmake' => :build
+  depends_on 'extracmakemodules' => :build
   depends_on 'qt'
+  depends_on 'snoregrowl'
 
   def install
   

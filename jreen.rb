@@ -2,17 +2,15 @@ require 'formula'
 
 class Jreen < Formula
   head 'git://github.com/euroelessar/jreen.git'
-  url 'http://download.tomahawk-player.org/libjreen-1.1.1.tar.bz2'
-  md5 '180c4a3356b6d5865292e33de2a29820'
+  url 'https://github.com/euroelessar/jreen/archive/v1.2.0.tar.gz'
+  md5 'a7d2480c789173c4f836c14a97f66b51'
 
   depends_on 'cmake' => :build
   depends_on 'gsasl'
   depends_on 'qt5'
-#  depends_on 'tomahawk-player/tomahawkqt5/qca'
-#  depends_on 'tomahawk-player/tomahawkqt5/qca-ossl'
 
   def install
-    system "cmake . #{std_cmake_parameters}"
+    system "cmake -DJREEN_FORCE_QT4=OFF . #{std_cmake_parameters}"
     system "make install"
   end
 end

@@ -7,6 +7,7 @@ class Attica < Formula
   md5 '2de3a49d79884ed3ce9df491bf35a86b'
 
   depends_on 'cmake' => :build
+  depends_on 'extracmakemodules' => :build
   depends_on 'qt5'
 
   def install

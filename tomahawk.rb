@@ -13,7 +13,6 @@ class Tomahawk < Formula
   depends_on 'cmake' => :build
   depends_on 'pkgconfig' => :build
 #  depends_on 'tomahawk-player/tomahawk/qt'
-  depends_on 'qjson'
   depends_on 'taglib'
   depends_on 'boost'
   depends_on 'libechonest'
@@ -28,7 +27,6 @@ class Tomahawk < Formula
   # optional:
   depends_on 'tomahawk-player/tomahawkqt5/jreen'
   depends_on 'qca'
-  depends_on 'tomahawk-player/tomahawkqt5/qca-ossl'
 
   def install
     system "cmake . #{std_cmake_parameters}"

@@ -2,8 +2,8 @@ require 'formula'
 
 class Liblastfm < Formula
   head 'git://github.com/lastfm/liblastfm.git'
-#  url 'http://cdn.last.fm/client/liblastfm-1.0.2.tar.gz'
-  md5 '6822e4048a69a7f9afed6236cc555291'
+  url 'https://github.com/lastfm/liblastfm/archive/1.0.9.tar.gz'
+  sha1 '4a6323538a26c5ea2080a8ebe58e4407dbc42397'
 
   depends_on 'cmake' => :build
   depends_on 'qt5'

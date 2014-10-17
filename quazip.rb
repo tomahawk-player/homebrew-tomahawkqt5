@@ -7,17 +7,11 @@ class Quazip < Formula
   # sha1 "861ab4efc048fdb272161848bb8829848857ec97"
   homepage ''
 
+  depends_on 'cmake' => :build
   depends_on 'qt5'
 
   def install
-    args = %W[
-      -config release
-      PREFIX=#{prefix}
-      LIBS+=-L/usr/lib LIBS+=-lz
-      INCLUDEPATH+=/usr/include
-    ]
-
-    system "qmake", "quazip.pro", *args
-    system "make", "install"
+    system "cmake . -DBUILD_WITH_QT4=OFF"
+    system "make install"
   end
 end

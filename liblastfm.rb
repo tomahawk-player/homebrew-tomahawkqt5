@@ -8,7 +8,7 @@ class Liblastfm < Formula
 
   depends_on 'cmake' => :build
   depends_on 'qt5'
-  
+
   # deps for the fingerprinting lib
   depends_on 'fftw'
   depends_on 'libsamplerate'

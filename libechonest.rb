@@ -10,7 +10,7 @@ class Libechonest < Formula
   depends_on 'qt5'
 
   def install
-    system "cmake", ".", *std_cmake_args
+    system "cmake", ".", "-DBUILD_WITH_QT4=OFF", *std_cmake_args
     system "make install"
   end
 end

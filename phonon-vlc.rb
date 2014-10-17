@@ -11,9 +11,6 @@ class PhononVlc <Formula
   depends_on 'xz' => :build
   depends_on 'kde-phonon'
   depends_on 'vlc'
-  depends_on 'libogg'
-  depends_on 'libvorbis'
-  depends_on 'faad2'
   depends_on 'qt5'
 
   def install

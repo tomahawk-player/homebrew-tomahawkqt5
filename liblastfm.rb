@@ -10,8 +10,8 @@ class Liblastfm < Formula
   depends_on 'qt5'
 
   # deps for the fingerprinting lib
-  depends_on 'fftw'
-  depends_on 'libsamplerate'
+  # depends_on 'fftw'
+  # depends_on 'libsamplerate'
 
   def install
     system "cmake  . -DBUILD_FINGERPRINT=OFF -DBUILD_TESTS=OFF #{std_cmake_parameters}"

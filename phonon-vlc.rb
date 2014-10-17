@@ -23,6 +23,7 @@ class PhononVlc <Formula
     system "cmake . #{std_cmake_parameters} -DPhonon_DIR:PATH=#{phonon.lib}/cmake/phonon -DPHONON_BUILD_PHONON4QT5=ON"
     system "make install"
 
+    # FIXME: Current stable+git phonon4qt5 should install to a different path.
     # phonon is dumb and just loads p lugins blindly from the qt plugin path. we're really sure we want to be loaded, so we delete any other
     # phonon backends first.
     pluginDir = "#{Formula.factory("qt5").prefix}/plugins/phonon_backend"

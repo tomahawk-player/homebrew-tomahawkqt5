@@ -15,6 +15,8 @@ class Tomahawk < Formula
   depends_on 'taglib'
   depends_on 'boost'
   depends_on 'libechonest'
+  depends_on 'gnutls'
+  depends_on 'google-sparsehash'
   depends_on 'tomahawk-player/tomahawkqt5/quazip'
   depends_on 'tomahawk-player/tomahawkqt5/attica'
   depends_on 'tomahawk-player/tomahawkqt5/lucenepp'

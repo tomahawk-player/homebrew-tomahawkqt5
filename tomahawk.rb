@@ -19,12 +19,13 @@ class Tomahawk < Formula
   depends_on 'tomahawk-player/tomahawkqt5/libechonest'
   depends_on 'tomahawk-player/tomahawkqt5/quazip'
   depends_on 'tomahawk-player/tomahawkqt5/attica'
-  depends_on 'tomahawk-player/tomahawkqt5/lucenepp'
   depends_on 'tomahawk-player/tomahawkqt5/liblastfm'
   depends_on 'tomahawk-player/tomahawkqt5/qtkeychain'
 
-  # optional:
-  depends_on 'tomahawk-player/tomahawkqt5/jreen'
+  # HEAD ONLY:
+  # depends_on 'tomahawk-player/tomahawkqt5/lucenepp'
+  # depends_on 'tomahawk-player/tomahawkqt5/jreen'
+  # depends_on 'tomahawk-player/tomahawkqt5/websocketpp'
   depends_on 'tomahawk-player/tomahawkqt5/snorenotify'
   depends_on 'qca' => ['--with-qt5', '--without-qt']
 

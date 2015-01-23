@@ -26,7 +26,7 @@ class Tomahawk < Formula
   # depends_on 'tomahawk-player/tomahawkqt5/jreen'
   # depends_on 'tomahawk-player/tomahawkqt5/websocketpp'
   # depends_on 'tomahawk-player/tomahawkqt5/quazip'
-  depends_on 'tomahawk-player/tomahawkqt5/snorenotify'
+  # depends_on 'tomahawk-player/tomahawkqt5/snorenotify'
   depends_on 'qca' => ['--with-qt5', '--without-qt']
 
   def install

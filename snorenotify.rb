@@ -28,7 +28,7 @@ class Snorenotify < Formula
 
     exp = "export #{cfl}; export #{cxxfl}; export SDKROOT=#{sdk}"
 
-    system "#{exp}; cmake . #{std_cmake_parameters}"
+    system "#{exp}; cmake -DWITH_QT4=OFF . #{std_cmake_parameters}"
     system "#{exp}; make install"
   end
 end

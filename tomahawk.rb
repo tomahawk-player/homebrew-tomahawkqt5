@@ -23,6 +23,7 @@ class Tomahawk < Formula
 
   # optional:
   depends_on 'tomahawk-player/tomahawkqt5/jreen'
+  depends_on 'tomahawk-player/tomahawkqt5/snorenotify'
   depends_on 'qca'
 
   def install

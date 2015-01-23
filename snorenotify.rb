@@ -2,12 +2,12 @@ require 'formula'
 
 class Snorenotify < Formula
   head 'git://github.com/Snorenotify/Snorenotify.git'
-  url 'https://github.com/Snorenotify/Snorenotify/archive/v0.5.1.tar.gz'
-  sha1 'eb83e0b7bccfc1c307a8457265dc4a5607a8b877'
+  url 'https://github.com/Snorenotify/Snorenotify/archive/v0.5.2.tar.gz'
+#  sha1 'eb83e0b7bccfc1c307a8457265dc4a5607a8b877'
 
   depends_on 'cmake' => :build
   depends_on 'extracmakemodules' => :build
-  depends_on 'qt'
+  depends_on 'qt5'
   depends_on 'snoregrowl'
 
   def install

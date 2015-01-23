@@ -17,7 +17,6 @@ class Tomahawk < Formula
   depends_on 'gnutls'
   depends_on 'google-sparsehash'
   depends_on 'tomahawk-player/tomahawkqt5/libechonest'
-  depends_on 'tomahawk-player/tomahawkqt5/quazip'
   depends_on 'tomahawk-player/tomahawkqt5/attica'
   depends_on 'tomahawk-player/tomahawkqt5/liblastfm'
   depends_on 'tomahawk-player/tomahawkqt5/qtkeychain'
@@ -26,6 +25,7 @@ class Tomahawk < Formula
   # depends_on 'tomahawk-player/tomahawkqt5/lucenepp'
   # depends_on 'tomahawk-player/tomahawkqt5/jreen'
   # depends_on 'tomahawk-player/tomahawkqt5/websocketpp'
+  # depends_on 'tomahawk-player/tomahawkqt5/quazip'
   depends_on 'tomahawk-player/tomahawkqt5/snorenotify'
   depends_on 'qca' => ['--with-qt5', '--without-qt']
 

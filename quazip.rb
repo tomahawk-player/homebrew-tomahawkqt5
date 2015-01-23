@@ -11,7 +11,7 @@ class Quazip < Formula
   depends_on 'qt5'
 
   def patches
-    patches = [ "https://gist.githubusercontent.com/muesli/f567e2f8f1e1147db649/raw/b0c470e0ce67438ce1a4dc68152ed82115f47254/gistfile1.txt" ]
+    patches = [ "https://gist.githubusercontent.com/muesli/f567e2f8f1e1147db649/raw/7931db6a16344c83a456d38b64f2644c71fff4bb/gistfile1.txt" ]
     return patches
   end
 

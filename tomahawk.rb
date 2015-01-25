@@ -30,7 +30,7 @@ class Tomahawk < Formula
   depends_on 'qca' => ['--with-qt5', '--without-qt']
 
   def install
-    system "cmake . #{std_cmake_parameters}"
+    system "cmake -DBUILD_WITH_QT4=OFF . #{std_cmake_parameters}"
     system "make install" # if this fails, try separate make/make install steps
     system "exit"
   end

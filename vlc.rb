@@ -78,7 +78,7 @@ class Vlc < Formula
 
     # VLC
     system "#{exp}; ./bootstrap"
-    system "#{exp}; mkdir -p build; cd build; ../extras/package/macosx/configure.sh --disable-ncurses --disable-lua --disable-x265 --disable-httpd --disable-dvdnav --disable-decklink --disable-vcd --disable-atmo --disable-asa --disable-macosx --disable-macosx-dialog-provider --disable-libcddb --disable-cdda --with-macosx-sdk=#{sdk} -host=#{darwinVer} --build=#{darwinVer} --prefix=#{prefix}"
+    system "#{exp}; mkdir -p build; cd build; ../extras/package/macosx/configure.sh --disable-ncurses --disable-x265 --disable-httpd --disable-dvdnav --disable-decklink --disable-vcd --disable-atmo --disable-macosx --disable-macosx-dialog-provider --disable-libcddb --with-macosx-sdk=#{sdk} -host=#{darwinVer} --build=#{darwinVer} --prefix=#{prefix}"
     system "#{exp}; cd build; make install"
   end
 end

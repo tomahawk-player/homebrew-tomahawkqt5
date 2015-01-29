@@ -20,6 +20,7 @@ class Tomahawk < Formula
   depends_on 'tomahawk-player/tomahawkqt5/attica'
   depends_on 'tomahawk-player/tomahawkqt5/liblastfm'
   depends_on 'tomahawk-player/tomahawkqt5/qtkeychain'
+  depends_on 'tomahawk-player/tomahawkqt5/qca'
 
   # HEAD ONLY:
   # depends_on 'tomahawk-player/tomahawkqt5/lucenepp'
@@ -27,7 +28,6 @@ class Tomahawk < Formula
   # depends_on 'tomahawk-player/tomahawkqt5/websocketpp'
   # depends_on 'tomahawk-player/tomahawkqt5/quazip'
   # depends_on 'tomahawk-player/tomahawkqt5/snorenotify'
-  depends_on 'qca' => ['--with-qt5', '--without-qt']
 
   def install
     system "cmake -DBUILD_WITH_QT4=OFF . #{std_cmake_parameters}"

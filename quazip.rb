@@ -10,10 +10,10 @@ class Quazip < Formula
   depends_on 'cmake' => :build
   depends_on 'qt5'
 
-  def patches
-    patches = [ "https://gist.githubusercontent.com/muesli/f567e2f8f1e1147db649/raw/7931db6a16344c83a456d38b64f2644c71fff4bb/gistfile1.txt" ]
-    return patches
-  end
+  #def patches
+  #  patches = [ "https://gist.githubusercontent.com/muesli/f567e2f8f1e1147db649/raw/7931db6a16344c83a456d38b64f2644c71fff4bb/gistfile1.txt" ]
+  #  return patches
+  #end
 
   def install
     system "cmake . -DBUILD_WITH_QT4=OFF"

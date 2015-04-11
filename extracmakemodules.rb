@@ -2,8 +2,8 @@ require 'formula'
 
 class Extracmakemodules < Formula
   head 'git://anongit.kde.org/extra-cmake-modules'
-  url 'ftp://ftp.kde.org/pub/kde/stable/frameworks/5.6/extra-cmake-modules-1.6.1.tar.xz'
-#  md5 'a0b95a4e5ffb8bde51a95584292b03ed'
+  url 'http://download.kde.org/stable/frameworks/5.9/extra-cmake-modules-5.9.0.tar.xz'
+  sha1 'bbfc5d9ec13e88454f6da8c527d9bb83453bcb85'
 
   depends_on 'qt5'
   depends_on 'cmake'

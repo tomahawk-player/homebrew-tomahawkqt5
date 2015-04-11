@@ -3,8 +3,8 @@ require 'formula'
 class Attica < Formula
   homepage 'http://www.kde.org/'
   head 'git://anongit.kde.org/attica.git'
-  url 'ftp://ftp.kde.org/pub/kde/stable/frameworks/5.6/attica-5.6.0.tar.xz'
-#  md5 '194b9a2141a2a4e23f2bc6dde92178f5'
+  url 'http://download.kde.org/stable/frameworks/5.9/attica-5.9.0.tar.xz'
+  sha1sum 'f4f788d871da310d4b659ac13d50c79e33791cc7'
 
   depends_on 'cmake' => :build
   depends_on 'extracmakemodules' => :build

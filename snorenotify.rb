@@ -1,9 +1,9 @@
 require 'formula'
 
 class Snorenotify < Formula
-  head 'git://github.com/Snorenotify/Snorenotify.git'
-  url 'https://github.com/Snorenotify/Snorenotify/archive/v0.5.2.tar.gz'
-#  sha1 'eb83e0b7bccfc1c307a8457265dc4a5607a8b877'
+  head 'git://anongit.kde.org/snorenotify'
+  url 'http://download.kde.org/unstable/snorenotify/0.5.72/src/snorenotify-0.5.7.2.tar.xz'
+  sha1 '633d26bfc07a672e3c669eb2ecef6becbee4aca7'
 
   depends_on 'cmake' => :build
   depends_on 'extracmakemodules' => :build
@@ -28,7 +28,7 @@ class Snorenotify < Formula
 
     exp = "export #{cfl}; export #{cxxfl}; export SDKROOT=#{sdk}"
 
-    system "#{exp}; cmake -DWITH_QT4=OFF . #{std_cmake_parameters}"
+    system "#{exp}; cmake . #{std_cmake_parameters}"
     system "#{exp}; make install"
   end
 end

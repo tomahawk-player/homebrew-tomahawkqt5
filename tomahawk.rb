@@ -5,7 +5,7 @@ require 'formula'
 
 class Tomahawk < Formula
   homepage ''
-  url 'http://downloads.tomahawk-player.org/tomahawk-0.8.2.tar.bz2'
+  url 'http://download.tomahawk-player.org/tomahawk-0.8.2.tar.bz2'
   head 'git://github.com/tomahawk-player/tomahawk.git'
 #  md5 '708602116a849c4739480cf52a98bc1a'
 

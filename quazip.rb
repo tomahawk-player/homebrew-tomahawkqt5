@@ -16,7 +16,7 @@ class Quazip < Formula
   #end
 
   def install
-    system "cmake . -DBUILD_WITH_QT4=OFF"
+    system "cmake", ".", "-DBUILD_WITH_QT4=OFF", "-DCMAKE_INSTALL_PREFIX=#{prefix}"
     system "make install"
   end
 end

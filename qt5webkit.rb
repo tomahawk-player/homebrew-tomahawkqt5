@@ -7,8 +7,10 @@ class Qt5webkit < Formula
   depends_on 'qt5'
 
   def install
-    system "qmake"
+
+    qmake_args = ["-config", "release", "PREFIX=/"]
+    system "qmake", *qmake_args
     system "make"
-    system "make install"
+    system "make", "INSTALL_ROOT=#{prefix}", "install"
   end
 end

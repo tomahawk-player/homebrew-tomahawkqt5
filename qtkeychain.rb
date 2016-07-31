@@ -6,7 +6,7 @@ class Qtkeychain < Formula
   homepage 'https://github.com/frankosterfeld/qtkeychain'
   head 'https://github.com/frankosterfeld/qtkeychain.git', :using => :git
   url 'https://github.com/frankosterfeld/qtkeychain/archive/v0.4.0.tar.gz'
-  sha1 '869ed20d15cc78ab3903701faf3100d639c3da57'
+  sha256 'a67dea6a2cc857afdb12f1e639aef63d1a9841a44e5640d9e71d0446f146b707'
 
   depends_on 'cmake' => :build
   depends_on 'qt5'

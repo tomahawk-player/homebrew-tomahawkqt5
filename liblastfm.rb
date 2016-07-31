@@ -3,7 +3,7 @@ require 'formula'
 class Liblastfm < Formula
   head 'git://github.com/lastfm/liblastfm.git'
   url 'https://github.com/lastfm/liblastfm/archive/1.0.9.tar.gz'
-  sha1 '4a6323538a26c5ea2080a8ebe58e4407dbc42397'
+  sha256 '5276b5fe00932479ce6fe370ba3213f3ab842d70a7d55e4bead6e26738425f7b'
 
   depends_on 'cmake' => :build
   depends_on 'qt5'

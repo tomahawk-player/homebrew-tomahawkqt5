@@ -3,7 +3,7 @@ require "formula"
 class Qca < Formula
   homepage "http://delta.affinix.com/qca/"
   url "http://ftp.uni-kl.de/pub/linux/kde/stable/qca-qt5/2.1.0.3/src/qca-qt5-2.1.0.3.tar.xz"
-  sha1 "ea75aaa5d68f0b9c8bcc6299ee8c7d63b6f66715"
+  sha256 "ab0170696a8ff87588d38a72d36d0b4b42db9080c991d1a40ceb3f8311d289f9"
   head "git://anongit.kde.org/qca.git"
 
   option "with-api-docs", "Build API documentation"

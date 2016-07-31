@@ -3,7 +3,7 @@ require 'formula'
 class Jreen < Formula
   head 'git://github.com/euroelessar/jreen.git'
   url 'https://github.com/euroelessar/jreen/archive/v1.2.0.tar.gz'
-  sha1 'a3508bd84f37cb1047924ea2ed6cf60ae00907eb'
+  sha256 'cee3762015357bfd88f7f3eb71dd7f90ddf37fdff07c5cf99881fda051c5fe1b'
 
   depends_on 'cmake' => :build
   depends_on 'gsasl'

@@ -4,7 +4,7 @@ class Libechonest < Formula
   homepage 'https://projects.kde.org/projects/playground/libs/libechonest'
   head 'git://anongit.kde.org/libechonest.git'
   url 'http://files.lfranchi.com/libechonest-2.3.1.tar.bz2'
-  sha1 '9d7245c71e707651a7054ce6f0d90b9a62004b23'
+  sha256 '56756545fd1cb3d9067479f52215b6157c1ced2bc82b895e72fdcd9bebb47889'
 
   depends_on 'cmake' => :build
   depends_on 'qt5'

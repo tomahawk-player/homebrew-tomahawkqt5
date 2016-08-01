@@ -3,7 +3,7 @@ require 'formula'
 class Snoregrowl < Formula
   head 'git://github.com/Snorenotify/SnoreGrowl.git'
   url 'https://github.com/Snorenotify/SnoreGrowl/archive/v0.4.0.tar.gz'
-  sha1 '16b84d2fb673438c8250cefd95f7e4c145e4cf22'
+  sha256 'bc8d488ee1d390e4d090629b69ca7048831d738c32bd743cf55cb21412990759'
 
   depends_on 'cmake' => :build
 

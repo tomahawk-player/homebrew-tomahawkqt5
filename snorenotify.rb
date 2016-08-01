@@ -3,7 +3,7 @@ require 'formula'
 class Snorenotify < Formula
   head 'git://anongit.kde.org/snorenotify'
   url 'http://download.kde.org/stable/snorenotify/0.6.0/src/snorenotify-0.6.0.tar.xz'
-  sha1 'f2c28962ba6548829ba50c906b95068d3ef7aa1f'
+  sha256 'd221bed77abec2d0e7c6120e63ca5f3f4b0193d84fdec497d61ab1159c85269e'
 
   depends_on 'cmake' => :build
   depends_on 'extracmakemodules' => :build

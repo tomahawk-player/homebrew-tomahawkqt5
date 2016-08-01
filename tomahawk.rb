@@ -30,7 +30,7 @@ class Tomahawk < Formula
   # depends_on 'tomahawk-player/tomahawkqt5/snorenotify'
 
   def install
-    system "cmake -DBUILD_WITH_QT4=OFF . #{std_cmake_parameters}"
+    system "cmake -DBUILD_WITH_QT4=OFF . #{std_cmake_args}"
     system "make install" # if this fails, try separate make/make install steps
     system "exit"
   end

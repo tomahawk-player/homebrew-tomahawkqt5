@@ -13,7 +13,7 @@ class Vsxu < Formula
 #  depends_on 'libjpeg'
 
   def install
-    system "cmake . #{std_cmake_parameters}"
+    system "cmake . #{std_cmake_args}"
     system "make install"
   end
 end

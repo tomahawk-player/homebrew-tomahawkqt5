@@ -25,7 +25,7 @@ class Snoregrowl < Formula
 
     exp = "export #{cfl}; export #{cxxfl}; export SDKROOT=#{sdk}"
 
-    system "#{exp}; cmake . #{std_cmake_parameters}"
+    system "#{exp}; cmake . #{std_cmake_args}"
     system "#{exp}; make install"
   end
 end

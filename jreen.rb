@@ -10,7 +10,7 @@ class Jreen < Formula
   depends_on 'qt5'
 
   def install
-    system "cmake -DJREEN_FORCE_QT4=OFF . #{std_cmake_parameters}"
+    system "cmake -DJREEN_FORCE_QT4=OFF . #{std_cmake_args}"
     system "make install"
   end
   patch do

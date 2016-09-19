@@ -2,9 +2,9 @@ require 'formula'
 
 class Vlc < Formula
   homepage 'http://www.videolan.org/vlc'
-  version "3.0.0-20160816-0342"
+  version "3.0.0-20160919-0341"
   url "http://nightlies.videolan.org/build/macosx-intel/vlc-#{version}-git.dmg", :using => NoUnzipCurlDownloadStrategy
-  sha256 "47fbf0626c8845c0747f0664efafd54c6235bfad00a7872aa2bce2f2d4c646a0"
+  sha256 "a2ba3c5a171cb33067edf53738f702f9da421855cdd8680855ea2e6995bbeb78"
   keg_only "ships a lot of libraries that have their own formulas"
 
   def install

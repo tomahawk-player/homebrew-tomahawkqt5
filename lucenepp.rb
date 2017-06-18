@@ -9,6 +9,12 @@ class Lucenepp < Formula
   depends_on 'boost'
 
   def install
-    system "mkdir build && cd build && cmake -DENABLE_TEST=OFF #{std_cmake_args} .. && make install"
+     args = std_cmake_args
+     args << "-DENABLE_TEST=OFF"
+
+     mkdir "build" do
+       system "cmake", "..", *args
+       system "make", "install"
+     end
   end
 end

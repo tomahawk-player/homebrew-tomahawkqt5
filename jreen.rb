@@ -10,8 +10,11 @@ class Jreen < Formula
   depends_on 'qt5'
 
   def install
-    system "cmake -DJREEN_FORCE_QT4=OFF . #{std_cmake_args}"
-    system "make install"
+    args = std_cmake_args
+    args << "-DJREEN_FORCE_QT4=OFF"
+
+    system "cmake", "." , *args
+    system "make", "install"
   end
   patch do
       url "http://pkgs.fedoraproject.org/cgit/rpms/jreen.git/plain/jreen-1.2.1-qt56.patch?id=bd9ec5ded9ecf3479cfbe1068f99a7fb16a4286e"

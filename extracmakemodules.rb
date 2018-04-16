@@ -3,7 +3,7 @@ require 'formula'
 class Extracmakemodules < Formula
   head 'https://github.com/dschmidt/extra-cmake-modules.git'
   url 'https://github.com/KDE/extra-cmake-modules/archive/v5.35.0.tar.gz'
-  sha256 'b6f84775d029208bdfed0a725952bcb674ddee50598f46102fc575d2ddb6c098'
+  sha256 '6289cb01e3c7207d6236ff282e5ca9ed8ea359512efc4e438b9e011277da1894'
 
   depends_on 'qt5'
   depends_on 'cmake'

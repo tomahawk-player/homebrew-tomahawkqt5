@@ -3,8 +3,8 @@ require 'formula'
 class Libechonest < Formula
   homepage 'https://projects.kde.org/projects/playground/libs/libechonest'
   head 'git://anongit.kde.org/libechonest.git'
-  url 'http://files.lfranchi.com/libechonest-2.3.1.tar.bz2'
-  sha256 '56756545fd1cb3d9067479f52215b6157c1ced2bc82b895e72fdcd9bebb47889'
+  url 'https://github.com/lfranchi/libechonest/archive/2.3.1.tar.gz'
+  sha256 'ab961ab952df30c5234b548031594d7e281e7c9f2a9d1ce91fe5421ddde85e7c'
 
   depends_on 'cmake' => :build
   depends_on 'qt5'
